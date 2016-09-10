@@ -3,7 +3,7 @@ This is a repository of survey files, results, analyses and presentation for CS 
 
 ## Members
 
-- Abby Canedo
+- Abby Cañedo
 - Carisse Dacuba, 
 - Vincent Fiestada, 
 - Arel Latoga, 
