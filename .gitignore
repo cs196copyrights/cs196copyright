@@ -1,0 +1,4 @@
+acm_template/*
+**/*.aux
+**/*.dvi
+**/*.log
