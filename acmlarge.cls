@@ -985,10 +985,7 @@ the#1\endcsname{\@thmcounter{#1}}\global
 \acmPages{\@totalpg\@lastpg\global\advance\@totalpg-\@firstpg\global\advance\@totalpg\@ne\the\@totalpg\ pages}
 
 % Reference Format
-\gdef\formatline{{\em{\@journalNameShort\ }}\@acmVolume, \@acmNumber, Article~\@acmArticle\ (\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.\\ % Need Journal Name in italics - in 'ACM Reference Format' before 1. INTRODUCTION - Gerry - March 2012
-{\tt DOI:}http://dx.doi.org/10.1145/\@doi} % Gerry March 2012 - on first page in 'ACM Reference Format'
-\gdef\copyrightline{\copyright\ \@acmYear\ \@cpyright\ \$\@acmPrice}
-\gdef\doiline{{\tt DOI:}http://dx.doi.org/10.1145/\@doi} % Gerry - March 2012 - beneath copyright line
+\gdef\formatline{{\em{\@journalNameShort\ }}\@acmVolume, \@acmNumber, Article~\@acmArticle\ (\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.} % Gerry - March 2012 - beneath copyright line
 
 \def\category#1#2#3{\@ifnextchar
   [{\@category{#1}{#2}{#3}}{\@xcategory{#1}{#2}{#3}}}
