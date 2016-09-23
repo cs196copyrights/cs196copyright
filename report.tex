@@ -12,6 +12,7 @@
 
 \usepackage{float}
 \usepackage{bchart}
+\usepackage{pgf-pie}
 
 % Metadata Information
 \acmVolume{1}
@@ -132,19 +133,61 @@ The questionnaires were administered either online or via paper forms, and also 
 
 \section{Results and Discussion}
 
-The respondents interviewed had a fair amount of familiarity with the products in question (iPhones, iPads, Galaxy phones and tablets, Java and Android). The percentage of respondents who were familiar with each product are presented in the Figure 3.
+The respondents interviewed had a fair amount of familiarity with the products in question (iPhones, iPads, Galaxy phones and tablets, Java and Android). The data also showed a large overlap over the familiarity of respondents. Many respondents were familiar with several of the products, with around 55\% being familiar with all of them.
 
 \begin{figure}[H]
 	\begin{bchart}[min=0, step=10 ,max=100]
-        \bcbar[text="iPhones and iPads", color=yellow]{91.3}
+		\bcbar[text="iPhones \& iPads", color=purple!30]{92.22}
             \smallskip
-        \bcbar{82.6}
-            \medskip
-        \bcbar{60.9}
-            \bigskip
-        \bcbar{93.5}
+        \bcbar[text="Galaxy phones \& tablets", color=blue!50]{83.33}
+            \smallskip
+        \bcbar[text="Java", color=yellow]{61.11}
+			\smallskip
+        \bcbar[text="Android", color=green]{93.33}
     \end{bchart}
+	\caption{Percentages of respondents who were familiar with the products involved in the court cases in question.}
 \end{figure}
+
+\subsection{Opinions on Apple vs. Samsung}
+
+Respondents were asked Yes/No questions about their opinions of the court decisions on the Apple vs. Samsung trials. 40\% of respondents already knew of the case beforehand, while 60\% did not.
+
+\begin{figure}[H]
+	\begin{tikzpicture}
+		\pie[text=legend]{40/Knew about the case, 
+			  60/Did not know about the case}
+	\end{tikzpicture}
+	\caption{Percentage of respondents who knew about the Apple vs. Samsung series of cases.}
+\end{figure}
+
+
+As to the charges of infringement upon Apple's design patents, 67\% thought that Samsung was \textbf{not guilty} of infringing upon Apple's patent for the ornamental design of the iPhone. 62\% of respondents thought that Samsung was \textbf{not guilty} of infringing upon Apple's patent for on-screen icons. 78\% of respondents agreed that Samsung was \textbf{not guilty} of violating Apple's iPad patents.
+
+\begin{figure}[h]
+	\begin{tikzpicture}
+		\pie[text=legend]{33/Yes, 
+			  67/No}
+	\end{tikzpicture}
+	\caption{Respondents' answers to "Samsung was found guilty of infringing Apple’s design patent of “home button, rounded corners and tapered edges (US D593087)” (See picture for comparison). Do you agree with the decision?"}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{tikzpicture}
+		\pie[text=legend]{38/Yes, 
+			  62/No}
+	\end{tikzpicture}
+	\caption{Respondents' answers to "Samsung was found guilty of infringing Apple’s design patent of “On-Screen Icons  (US D604305)” (See picture for comparison). Do you agree with the decision?"}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{tikzpicture}
+		\pie[text=legend]{78/Yes, 
+			  22/No}
+	\end{tikzpicture}
+	\caption{Respondents' answers to "Samsung was found not guilty of infringing Apple’s design patent for their iPad (US D504889) (See picture for comparison). Do you agree with the decision?"}
+\end{figure}
+
+In regards to the amicus briefs delivered by various third parties, 76\% of respondents agreed with the amicus brief from Dell, Facebook, Google and others that a patent infringement should not be worth the entire product. However, 63\% agreed with the opposing amicus brief that it is the design that sells and makes profit for a product.
 
 \section{Conclusion}
 
