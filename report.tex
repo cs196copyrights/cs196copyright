@@ -11,6 +11,7 @@
 \documentclass[prodmode,cs196]{acmlarge}
 
 \usepackage{float}
+\usepackage{bchart}
 
 % Metadata Information
 \acmVolume{1}
@@ -67,7 +68,7 @@ A copyright constitutes a different set of rights granted to an intellectual pro
 
 \subsection{Apple vs. Samsung}
 
-\textbf{Apple vs. Samsung} is a series of patent infringement lawsuits filed by Apple Computer, Inc. and Samsung against each other. As of the time of this writing, some cases are still pending in several courts. Apple has several design patents, including patents for the iPhone's shape, the colors of the graphical user interface of iOS, and the shape and design of the iPad.
+\textbf{Apple vs. Samsung} is a series of patent infringement lawsuits filed by Apple Inc. and Samsung Electronics Corp. against each other. As of the time of this writing, some cases are still pending in several courts. Apple has several design patents, including patents for the iPhone's shape, the colors of the graphical user interface of iOS, and the shape and design of the iPad.
 
 %% Photographs from Apple's design patents
 \begin{figure}[H]
@@ -81,7 +82,73 @@ On April 15, 2011, Apple sued Samsung in the United States District Court for th
 
 Apple cited the similarities between its own iPhone and iPad products and the Samsung Galaxy line of smartphones and tablets. In particular, Apple claimed infringement of US D593087 (for the "home button, rounded corners, and tapered edges" of the iPhone); \cite{AppleiPhoneDesignPatent}
 
+\subsection{Oracle vs. Google}
+
+\textbf{Oracle vs Google} was a dispute between the owners of Java (Oracle America, Inc.) and Android (Google, Inc.). Java is a programming language and set of libraries that was created by Sun Microsystems. Included with Java was an Application Programming Interface, which is a set of software tools that are meant to be used by other software to achieve a certain functionality. \cite{Sintes2001} The Java API allowed programmers to simplify their code and rely on existing libraries instead.
+
+Android was created by Android, Inc. and was later bought and further developed by Google. At an early stage of development, it was announced that it would use Java technologies. At the time, Sun Microsystems publicly praised the decision, with then CEO Jonathan Schwartz "offering my heartfelt congratulations to Google on the announcement of their new Java/Linux phone platform, Android." \cite{Schwartz2007} Google's own implementation of Java APIs were included in the Android Software Development Kit, which was an instrumental tool in allowing developers to write apps that would extend the functionality of Android.
+
+Sun Microsystems was bought by Oracle in 2010, while Android became one of the most used operating systems in the world. In August 2010, Oracle sued Google, claiming that Google violated infringed on its intellectual property when it created its own version of the Java API and demanded payment for damages. In its initial complaint, Oracle accussed Google of "knowingly, willingly, and unlawfully" copying, using, and redistributing its IP without express permission. \cite{Bangeman2003}. 
+
+There were several stages of the litigation process, characterized by three major decisions subsequently handed down by different courts. These decisions and the reasons for them are presented in Figure 2.
+
+\begin{figure}[H]
+	\begin{tabular}{|p{0.3\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+		\hline
+		\textbf{Ruling} & \textbf{Winner} & \textbf{Notes} \\
+		\hline
+		The APIs that Google "copied" were not protected by copyright & Google & The court reasoned that if \quote{there is only one way to declare a given method functionality, [so that] everyone using that function must write that specific line of code in the same way"}.\\
+		\hline
+		A higher court reversed the ruling; the Java APIs are protected by copyright & Oracle & \\
+		\hline
+		Google's use of them was under the terms of fair use & Google & The ruling that the Java APIs are protected by copyright still stands\\
+		\hline 
+	\end{tabular}
+	\caption{Listing of subsequent rulings at different stages of the litigation process between Oracle and Google. Google's defense was originally based on the triviality of the parts that were copied from the Java APIs, then the uncopyrightability of APIs, but in the end were forced to retreat and use a fair use defense.}
+\end{figure}
+
+Oracle had demanded financial compensation for Google's alleged violations, seeking up to US 9.3 billion dollars during its second trial. This was close to 4 billion dollars more than Oracle had paid for Sun Microsystems, and was at the time the largest amount demanded for an IP settlement. Oracle claimed that it deserved all of the profits made from Android because if it wasn't for Java, Android could not have competed during the early days of its depolyment. It cited how Google capitalized upon the wide market share of Java and used it to attract developers their then-fledgling platform. Google maintained that compensation, if any at all, paid to Oracle should have been much lower.\cite{Mullin2016}
+
+Many computer scientists disputed the second ruling, which reversed the initial decision that APIs were not protected by copyright. In an amicus brief filed by the Electronic Fronteir Foundation on behalf of computer scientists, they petitioned the court to favor the first ruling. Many in the software industry agreed with the fair use ruling, but still believed that the APIs should not have been copyrighted in the first place, obfuscating the need to go through trials in the first place. \cite{EFFAmicusBrief}
+
+Other groups such as the Picture Archive Council of America and Graphic Artists Guild argued against Google's fair use defense. They cited that it was "not fair" that Google used the creative works of Oracle to jump-start their venture into a new and lucrative field. They also maintained that court's third decision undermined the copyrights not only in software, but in all forms of creative works. \cite{ProOracleAmicusBrief}
+
+\section{Objectives}
+
+This survey is undertaken with the objectives
+
+\begin{itemize}
+	\item{to determine the familiarity of UP Diliman Engineering and Science undergraduates with the patent and copyright infringement lawsuits between Apple \& Samsung; and Oracle \& Google, respectively;}
+	\item{to determine the prevailing opinion of UP Diliman Engineering and Science undergraduates about the validity of Apple's infringement claims against Samsung;}
+	\item{to determine the prevailing opinion of UP Diliman Engineering and Science undergraduates about the validity of Oracle's infringement claims against Google;}
+	\item{to determine the likely response of UP Diliman Engineering and Science undergraduates to an infringement of their own intellectual property;}
+\end{itemize}
+
 \section{Methodology}
+
+The survey was carried out over a sample of undergraduate students in the University of the Philippines Diliman campus pursuing engineering and science degrees. Opportunistic sampling was used to select participants. Respondents were asked to answer thirteen (13) Yes/No questions, and 2 other multiple choice questions; the questionnaire pertained to their familiarity with the Apple vs. Samsung and Oracle vs. Google cases, the products (namely, the iPhone, iPad, Galaxy phones and tablets, Java and Android), perceptions about the correctness of major court decisions handed down during the course of the litigation processes, and what they would do in the case of their own intellectual property being infringed upon and used for profitable purposes. Regarding that same situation, they were asked if they would demand a stop to distribution/manufacture of the infringing product and what amount of the violators' profits they would demand as compensation (none, some or all).
+
+The questionnaires were administered either online or via paper forms, and also included briefing information about the cases, images of the products in question (where relevant), and definition of legal and technical terms pertaining to the cases. The entire questionnaire is available at the project site (please see the footnotes in the first page of this paper).
+
+\section{Results and Discussion}
+
+The respondents interviewed had a fair amount of familiarity with the products in question (iPhones, iPads, Galaxy phones and tablets, Java and Android). The percentage of respondents who were familiar with each product are presented in the Figure 3.
+
+\begin{figure}[H]
+	\begin{bchart}[min=0, step=10 ,max=100]
+        \bcbar[text="iPhones and iPads", color=yellow]{91.3}
+            \smallskip
+        \bcbar{82.6}
+            \medskip
+        \bcbar{60.9}
+            \bigskip
+        \bcbar{93.5}
+    \end{bchart}
+\end{figure}
+
+\section{Conclusion}
+
+\nocite{AppleiPhoneDesignPatent}
 
 \label{sect:bib}
 \bibliographystyle{acmref}
